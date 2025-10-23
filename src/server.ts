@@ -28,7 +28,7 @@ server.use(mainRoutes);
 
 // 404
 server.use((req, res) => {
-  res.status(404).send('Página não encontrada!!');
+  res.status(404).render('pages/404.mustache');
 });
 
 // Inicializa servidor
